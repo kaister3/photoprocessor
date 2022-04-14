@@ -112,13 +112,13 @@ def combine_images(image1, image2):
     return new_im
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
     # test
     # maybe become seperated test cases in the future
 
     # lake = Image(filename='lake.png')
     # city = Image(filename='city.png')
-    mario = Image(filename='mario.png')
+    # mario = Image(filename='mario.png')
 
     # test brighten feature
     # brightened_im = brighten(lake, 1.7)
@@ -136,8 +136,8 @@ if __name__ == '__main__':
     # decr_contrast.write_image('decreased_contrast.png')
 
     # test blur
-    blured_im = blur(mario, 3)
-    blured_im.write_image('blur_k3.png')
+    # blured_im = blur(mario, 3)
+    # blured_im.write_image('blur_k3.png')
 
     # blured_im = blur(mario, 15)
     # blured_im.write_image('blur_k15.png')
