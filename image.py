@@ -11,7 +11,7 @@ Programmer Beast Mode Spotify playlist: https://open.spotify.com/playlist/4Akns5
 """
 
 import numpy as np
-from utils import png
+import png
 
 
 class Image:

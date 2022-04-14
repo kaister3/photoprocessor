@@ -9,10 +9,8 @@ Website: https://www.kylieying.com
 Github: https://www.github.com/kying18 
 Programmer Beast Mode Spotify playlist: https://open.spotify.com/playlist/4Akns5EUb3gzmlXIdsJkPs?si=qGc4ubKRRYmPHAJAIrCxVQ 
 """
-from numpy import float64
 
-from utils.image import Image
-import numpy as np
+from image import Image
 
 
 def brighten(image, factor):
@@ -118,8 +116,9 @@ if __name__ == '__main__':
     # test
     # maybe become seperated test cases in the future
 
-    lake = Image(filename='lake.png')
-    city = Image(filename='city.png')
+    # lake = Image(filename='lake.png')
+    # city = Image(filename='city.png')
+    mario = Image(filename='mario.png')
 
     # test brighten feature
     # brightened_im = brighten(lake, 1.7)
@@ -130,17 +129,17 @@ if __name__ == '__main__':
     #
 
     # test contrast
-    # incr_contrast = adjust_contrast(lake, 2, 0.5)
+    # incr_contrast = adjust_contrast(mario, 2, 0.5)
     # incr_contrast.write_image('increased_contrast.png')
     #
-    # decr_contrast = adjust_contrast(lake, 0.5, 0.5)
+    # decr_contrast = adjust_contrast(mario, 0.5, 0.5)
     # decr_contrast.write_image('decreased_contrast.png')
 
     # test blur
-    # blured_im = blur(city, 3)
-    # blured_im.write_image('blur_k3.png')
-    #
-    # blured_im = blur(city, 15)
+    blured_im = blur(mario, 3)
+    blured_im.write_image('blur_k3.png')
+
+    # blured_im = blur(mario, 15)
     # blured_im.write_image('blur_k15.png')
 
     # apply a sobel edge detection kernel on the x-axis and y-axis
